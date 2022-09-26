@@ -1,0 +1,46 @@
+﻿@model Category
+
+<form method="post" asp-action="Edit">
+    <div class="border p-3 mt-4 w-50" style="margin-left:25%">
+        <div class="row pb-2">
+            <h2 class="text-primary">Edit Product</h2>
+            <hr />
+        </div>
+       @* <div asp-validation-summary="All"></div>*@
+        <div class="mb-3">
+            <label asp-for="ProductCode"></label>
+            <input asp-for="ProductCode" class=form-control />
+            <span asp-validation-for="ProductCode" class="text-danger"></span>
+        </div>
+        <div class="mb-3">
+            <label asp-for="ProductName"></label>
+            <input asp-for="ProductName" class=form-control />
+            <span asp-validation-for="ProductName" class="text-danger"></span>
+        </div>
+        <div class="mb-3">
+            <label asp-for="Manufacturer"></label>
+            <input asp-for="Manufacturer" class=form-control />
+            <span asp-validation-for="Manufacturer" class="text-danger"></span>
+        </div>
+        <div class="mb-3">
+            <label asp-for="ShippingNo"></label>
+            <input asp-for="ShippingNo" class=form-control />
+            <span asp-validation-for="ShippingNo" class="text-danger"></span>
+        </div>
+         <div class="mb-3">
+            <label asp-for="RetailPrice"></label>
+            <input asp-for="RetailPrice" class=form-control />
+            <span asp-validation-for="RetailPrice" class="text-danger"></span>
+        </div>
+        <button type="submit" class="btn btn-primary" style="width:150px">Update</button>
+        <a asp-controller="Category" asp-action="Index" class="btn btn-secondary" style="width: 150px">
+            Back to List
+        </a>
+    </div>
+</form>
+
+@section Scripts{
+@{
+   <partial name="_ValidationScriptsPartial" />
+}
+}

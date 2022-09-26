@@ -1,0 +1,35 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.0-preview.6.22329.4" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="7.0.0-preview.6.22329.4" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="7.0.0-preview.6.22329.4">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="6.0.7" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.3.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\imgs\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\imgs\eb.jpg" />
+    <None Include="wwwroot\imgs\ht.jpg" />
+    <None Include="wwwroot\imgs\jdd.png" />
+    <None Include="wwwroot\imgs\LT.jpg" />
+    <None Include="wwwroot\imgs\mb.jpg" />
+    <None Include="wwwroot\imgs\photo-1503023345310-bd7c1de61c7d.jpg" />
+    <None Include="wwwroot\imgs\sw.jpg" />
+    <None Include="wwwroot\imgs\tv.jpg" />
+  </ItemGroup>
+
+</Project>
